@@ -4,6 +4,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    company: "",
+    phone: "",
     message: "",
   });
 
@@ -35,7 +37,13 @@ const Contact = () => {
 
       if (res.ok && data.msg === "success") {
         setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: "",
+        });
       } else {
         setStatus("error");
       }
@@ -70,6 +78,24 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
+            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+          />
+
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            value={formData.company}
+            onChange={handleChange}
+            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
             className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
           />
 

@@ -8,7 +8,7 @@ exports.handler = async (event) => {
     };
   }
 
-  const { name, email, message } = JSON.parse(event.body);
+  const { name, email, company, phone, message } = JSON.parse(event.body);
 
   if (!name || !email || !message) {
     return {
@@ -27,6 +27,7 @@ exports.handler = async (event) => {
     },
   });
 
+  // Email to the client
   const clientMailOptions = {
     from: `"Worldstar" <${process.env.EMAIL_USER}>`,
     to: email,
@@ -34,12 +35,15 @@ exports.handler = async (event) => {
     html: `
       <h2>Hello ${name},</h2>
       <p>Thank you for contacting Worldstar! We have received your message.</p>
+      <p><strong>Company:</strong> ${company || "N/A"}</p>
+      <p><strong>Phone:</strong> ${phone || "N/A"}</p>
       <p><strong>Your Message:</strong> ${message}</p>
       <p>We’ll get back to you shortly.</p>
       <p>— Worldstar Team</p>
     `,
   };
 
+  // Email to the admin
   const adminMailOptions = {
     from: `"Worldstar" <${process.env.EMAIL_USER}>`,
     to: "hassankalyar744@gmail.com",
@@ -48,6 +52,8 @@ exports.handler = async (event) => {
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Company:</strong> ${company || "N/A"}</p>
+      <p><strong>Phone:</strong> ${phone || "N/A"}</p>
       <p><strong>Message:</strong> ${message}</p>
     `,
   };
