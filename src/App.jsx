@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./Header";
 import Home from "./Home";
@@ -17,9 +17,21 @@ import GlasswareTableware from "./products/GlasswareTableware";
 
 import Footer from "./Footer";
 
+// ScrollToTop component integrated
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* ensures scroll resets on route change */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
