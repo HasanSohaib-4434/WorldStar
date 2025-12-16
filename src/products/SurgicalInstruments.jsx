@@ -304,13 +304,19 @@ const SurgicalInstruments = () => {
               Contact us for product catalogs, instrument specifications,
               certifications, and bulk pricing for hospitals and distributors.
             </p>
+            import {Link} from "react-router-dom";
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="px-8 py-4 bg-white text-[#224b72] font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all text-lg">
-                Request Quote
-              </button>
-              <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#224b72] transition-all text-lg">
-                View All Products
-              </button>
+              <Link to="/contact">
+                <button className="px-8 py-4 bg-white text-[#224b72] font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all text-lg">
+                  Request Quote
+                </button>
+              </Link>
+
+              <Link to="/products">
+                <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#224b72] transition-all text-lg">
+                  View All Products
+                </button>
+              </Link>
             </div>
           </Reveal>
         </div>
