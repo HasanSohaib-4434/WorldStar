@@ -465,19 +465,16 @@ const Home = () => {
               </div>
             </FloatingCard>
 
-            <FloatingCard delay={200}>
-              <div className="flex justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#224b72] to-blue-600 opacity-20 blur-3xl rounded-full" />
-                <div className="w-full max-w-lg transform hover:scale-110 transition-transform duration-700 relative z-10">
-                  <DotLottieReact
-                    src="home.lottie"
-                    loop
-                    autoplay
-                    className="w-full h-full drop-shadow-2xl"
-                  />
-                </div>
+            <div className="flex justify-center lg:justify-end lg:-mr-20">
+              <div className="w-full lg:w-[140%] max-w-none">
+                <DotLottieReact
+                  src="Hero.lottie"
+                  loop
+                  autoplay
+                  className="w-full h-full drop-shadow-2xl scale-125 lg:scale-150"
+                />
               </div>
-            </FloatingCard>
+            </div>
           </div>
         </div>
       </section>
