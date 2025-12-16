@@ -149,19 +149,27 @@ const About = () => {
           <Reveal delay={200}>
             <div className="relative flex justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-[#224b72] to-blue-600 opacity-20 blur-3xl rounded-full" />
-              <Users className="w-40 h-40 text-[#224b72] relative z-10" />
+              <img
+                src="Global Presence.png"
+                alt="Global Presence"
+                className="w-80 h-80 relative z-10 object-contain"
+              />
             </div>
           </Reveal>
           <Reveal>
             <div>
-              <h2 className="text-4xl font-black mb-6">Who We Are</h2>
+              <h2 className="text-4xl font-black mb-6">
+                A Global Presence with Vast Industry Experience
+              </h2>
               <p className="text-lg text-gray-600 mb-4">
-                Worldstar Enterprise provides complete sourcing, manufacturing,
-                and logistics solutions for global businesses.
+                Based in Faisalabad, the textile manufacturing hub of Pakistan,
+                with sales operations in the United Kingdom, Australia, and New
+                Zealand.
               </p>
               <p className="text-lg text-gray-600">
-                Our mission is simple: deliver quality, reliability, and growth
-                opportunities to our partners worldwide.
+                Worldstar Enterprises leverages its global supply chain and
+                shipping infrastructure to streamline large-scale product
+                sourcing with speed, reliability, and precision.
               </p>
             </div>
           </Reveal>
@@ -191,7 +199,11 @@ const About = () => {
           <Reveal delay={200}>
             <div className="relative flex justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-[#224b72] to-blue-600 opacity-20 blur-3xl rounded-full" />
-              <Package className="w-40 h-40 text-[#224b72] relative z-10" />
+              <img
+                src="thirtyplus.png"
+                alt="Thirthy Plus"
+                className="w-100 h-100 relative z-10 object-contain"
+              />
             </div>
           </Reveal>
         </div>
