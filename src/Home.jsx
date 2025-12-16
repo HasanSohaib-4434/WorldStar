@@ -12,6 +12,7 @@ import {
   Users,
   Clock,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AnimatedText = () => {
   const phrases = [
@@ -226,10 +227,12 @@ const Home = () => {
               <AnimatedText />
 
               <div className="flex flex-wrap gap-4 animate-slide-up">
-                <button className="group bg-gradient-to-r from-[#224b72] to-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                  Explore Our Services
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                </button>
+                <Link to="/products">
+                  <button className="group bg-gradient-to-r from-[#224b72] to-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                    Explore Our Services
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  </button>
+                </Link>
                 <button className="group bg-white text-[#224b72] border-2 border-[#224b72] px-8 py-4 rounded-xl font-bold hover:bg-[#224b72] hover:text-white hover:scale-105 transition-all duration-300">
                   Get in Touch
                 </button>
