@@ -10,7 +10,6 @@ import {
   Package,
   Globe,
 } from "lucide-react";
-
 import { Link } from "react-router-dom";
 
 /* ---------------- Scroll Reveal ---------------- */
@@ -121,25 +120,37 @@ const FoodItems = () => {
         />
       </div>
 
-      {/* ---------------- Hero ---------------- */}
-      <section className="relative py-28 px-6 z-10 bg-gradient-to-br from-white via-blue-50 to-white">
-        <Reveal>
-          <div className="max-w-5xl mx-auto text-center">
-            <Apple className="w-20 h-20 mx-auto mb-6 text-[#224b72]" />
-            <h1 className="text-5xl md:text-6xl font-black text-gray-900">
-              Premium{" "}
-              <span className="bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent">
-                Food Items
-              </span>
-            </h1>
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Fresh, preserved, and packaged food products sourced from the
-              finest farms and manufacturers. Our food division delivers quality
-              ingredients and specialty items to markets across the globe.
-            </p>
-            <div className="h-1.5 w-32 bg-gradient-to-r from-[#224b72] to-blue-600 mx-auto mt-8 rounded-full" />
-          </div>
-        </Reveal>
+      {/* ---------------- Hero Banner ---------------- */}
+      <section className="relative h-[70vh] min-h-[500px] z-10 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/Foods.jpeg"
+            alt="Food Items"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="relative h-full flex items-center px-6 z-10">
+          <Reveal>
+            <div className="max-w-3xl">
+              <h1 className="text-5xl md:text-7xl font-black text-white mb-6">
+                Premium{" "}
+                <span className="bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent">
+                  Food Items
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+                Fresh, preserved, and packaged food products sourced from the
+                finest farms and manufacturers. Our food division delivers
+                quality ingredients and specialty items to markets across the
+                globe.
+              </p>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ---------------- Introduction ---------------- */}

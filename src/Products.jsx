@@ -67,7 +67,7 @@ const categories = [
     desc: "Top-grade sports gear for professional and recreational activities, ensuring safety and performance.",
     details:
       "Our catalog includes football, cricket equipment, gym accessories, fitness gear, and outdoor sports products. Built for durability and performance, trusted by athletes and sporting goods retailers globally.",
-    image: "/sports.jpeg",
+    image: "/Sports.jpeg",
   },
   {
     title: "Leather Products",

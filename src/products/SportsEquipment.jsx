@@ -112,24 +112,35 @@ const SportsEquipment = () => {
       </div>
 
       {/* ---------------- Hero ---------------- */}
-      <section className="relative py-28 px-6 z-10 bg-gradient-to-br from-white via-blue-50 to-white">
-        <Reveal>
-          <div className="max-w-5xl mx-auto text-center">
-            <Dumbbell className="w-20 h-20 mx-auto mb-6 text-[#224b72]" />
-            <h1 className="text-5xl md:text-6xl font-black text-gray-900">
-              Premium{" "}
-              <span className="bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent">
-                Sports Equipment
-              </span>
-            </h1>
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Top-grade sports gear manufactured to international standards.
-              From footballs to cricket equipment and general sporting goods, we
-              deliver quality that athletes and sports enthusiasts trust.
-            </p>
-            <div className="h-1.5 w-32 bg-gradient-to-r from-[#224b72] to-blue-600 mx-auto mt-8 rounded-full" />
-          </div>
-        </Reveal>
+      <section className="relative h-[70vh] min-h-[500px] z-10 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/Sports.jpeg"
+            alt="Sports Equipment"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="relative h-full flex items-center px-6 z-10">
+          <Reveal>
+            <div className="max-w-3xl">
+              <h1 className="text-5xl md:text-7xl font-black text-white mb-6">
+                Premium{" "}
+                <span className="bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent">
+                  Sports Equipment
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+                Top-grade sports gear manufactured to international standards.
+                From footballs to cricket equipment and general sporting goods,
+                we deliver quality that athletes and sports enthusiasts trust.
+              </p>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ---------------- Introduction ---------------- */}

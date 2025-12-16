@@ -120,25 +120,36 @@ const SurgicalInstruments = () => {
       </div>
 
       {/* ---------------- Hero ---------------- */}
-      <section className="relative py-28 px-6 z-10 bg-gradient-to-br from-white via-blue-50 to-white">
-        <Reveal>
-          <div className="max-w-5xl mx-auto text-center">
-            <Stethoscope className="w-20 h-20 mx-auto mb-6 text-[#224b72]" />
-            <h1 className="text-5xl md:text-6xl font-black text-gray-900">
-              Medical-Grade{" "}
-              <span className="bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent">
-                Surgical Instruments
-              </span>
-            </h1>
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Precision-engineered surgical instruments meeting American,
-              German, and Japanese medical standards. Trusted by healthcare
-              professionals worldwide for reliability, durability, and
-              performance.
-            </p>
-            <div className="h-1.5 w-32 bg-gradient-to-r from-[#224b72] to-blue-600 mx-auto mt-8 rounded-full" />
-          </div>
-        </Reveal>
+      <section className="relative h-[70vh] min-h-[500px] z-10 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/Surgical.jpeg"
+            alt="Surgical Instruments"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="relative h-full flex items-center px-6 z-10">
+          <Reveal>
+            <div className="max-w-3xl">
+              <h1 className="text-5xl md:text-7xl font-black text-white mb-6">
+                Medical-Grade{" "}
+                <span className="bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent">
+                  Surgical Instruments
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+                Precision-engineered surgical instruments meeting American,
+                German, and Japanese medical standards. Trusted by healthcare
+                professionals worldwide for reliability, durability, and
+                performance.
+              </p>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ---------------- Introduction ---------------- */}
