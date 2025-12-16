@@ -67,7 +67,7 @@ const categories = [
     desc: "Top-grade sports gear for professional and recreational activities, ensuring safety and performance.",
     details:
       "Our catalog includes football, cricket equipment, gym accessories, fitness gear, and outdoor sports products. Built for durability and performance, trusted by athletes and sporting goods retailers globally.",
-    image: "/Sports.JPEG",
+    image: "/universal.jpeg",
   },
   {
     title: "Leather Products",
@@ -76,7 +76,7 @@ const categories = [
     desc: "Premium leather goods including bags, belts, and accessories crafted with precision.",
     details:
       "We offer genuine leather and synthetic alternatives for bags, wallets, belts, jackets, and corporate accessories. Each piece undergoes rigorous quality checks to ensure lasting craftsmanship and style.",
-    image: "/Leather.JPEG",
+    image: "/universal.jpeg",
   },
   {
     title: "Surgical Instruments",
@@ -85,7 +85,7 @@ const categories = [
     desc: "Reliable surgical tools and medical instruments for healthcare providers worldwide.",
     details:
       "Manufacturing precision surgical instruments including forceps, scissors, scalpels, and diagnostic tools. CE certified and compliant with ISO medical standards, serving hospitals and medical distributors across continents.",
-    image: "/Surgical .JPEG",
+    image: "/universal.jpeg",
   },
   {
     title: "Glassware & Tableware",
@@ -94,7 +94,7 @@ const categories = [
     desc: "Elegant glass and tableware products for home, hospitality, and retail sectors.",
     details:
       "From crystal glassware to ceramic dinnerware, our collection combines elegance with functionality. Perfect for hotels, restaurants, retailers, and home consumers seeking quality and design.",
-    image: "/Glassware & Tableware.JPEG",
+    image: "/universal.jpeg",
   },
 ];
 
