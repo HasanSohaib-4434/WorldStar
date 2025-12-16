@@ -49,7 +49,7 @@ const categories = [
     desc: "High-quality fabrics, yarns, and finished textiles for fashion, home, and industrial use.",
     details:
       "From premium cotton and silk to technical fabrics, our textile range serves global fashion brands, interior designers, and industrial manufacturers with consistent quality and ethical sourcing.",
-    image: "/universal.jpeg",
+    image: "/Textiles.jpeg",
   },
   {
     title: "Food Items",
@@ -58,7 +58,7 @@ const categories = [
     desc: "Fresh, preserved, and packaged food products, sourced globally with strict quality control.",
     details:
       "We supply rice, spices, dried fruits, sauces, and specialty ingredients to retailers and distributors worldwide. Every product meets international food safety standards and hygiene certifications.",
-    image: "/universal.jpeg",
+    image: "/Foods.jpeg",
   },
   {
     title: "Sports Equipment",
@@ -67,7 +67,7 @@ const categories = [
     desc: "Top-grade sports gear for professional and recreational activities, ensuring safety and performance.",
     details:
       "Our catalog includes football, cricket equipment, gym accessories, fitness gear, and outdoor sports products. Built for durability and performance, trusted by athletes and sporting goods retailers globally.",
-    image: "/universal.jpeg",
+    image: "/Sports.JPEG",
   },
   {
     title: "Leather Products",
@@ -76,7 +76,7 @@ const categories = [
     desc: "Premium leather goods including bags, belts, and accessories crafted with precision.",
     details:
       "We offer genuine leather and synthetic alternatives for bags, wallets, belts, jackets, and corporate accessories. Each piece undergoes rigorous quality checks to ensure lasting craftsmanship and style.",
-    image: "/universal.jpeg",
+    image: "/Leather.JPEG",
   },
   {
     title: "Surgical Instruments",
@@ -85,7 +85,7 @@ const categories = [
     desc: "Reliable surgical tools and medical instruments for healthcare providers worldwide.",
     details:
       "Manufacturing precision surgical instruments including forceps, scissors, scalpels, and diagnostic tools. CE certified and compliant with ISO medical standards, serving hospitals and medical distributors across continents.",
-    image: "/universal.jpeg",
+    image: "/Surgical .JPEG",
   },
   {
     title: "Glassware & Tableware",
@@ -94,7 +94,7 @@ const categories = [
     desc: "Elegant glass and tableware products for home, hospitality, and retail sectors.",
     details:
       "From crystal glassware to ceramic dinnerware, our collection combines elegance with functionality. Perfect for hotels, restaurants, retailers, and home consumers seeking quality and design.",
-    image: "/universal.jpeg",
+    image: "/Glassware & Tableware.JPEG",
   },
 ];
 
