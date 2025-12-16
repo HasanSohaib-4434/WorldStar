@@ -9,6 +9,7 @@ import {
   Package,
   Globe,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 /* ---------------- Scroll Reveal ---------------- */
 const Reveal = ({ children, delay = 0 }) => {
@@ -292,18 +293,21 @@ const SportsEquipment = () => {
               Contact our team for product catalogs, bulk pricing, custom
               branding options, and sample requests.
             </p>
-            import {Link} from "react-router-dom";
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/contact">
-                <button className="px-8 py-4 bg-white text-[#224b72] font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all text-lg">
-                  Request Quote
-                </button>
+              {/* Request Quote */}
+              <Link
+                to="/contact"
+                className="px-8 py-4 bg-white text-[#224b72] font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all text-lg inline-block text-center"
+              >
+                Request Quote
               </Link>
 
-              <Link to="/products">
-                <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#224b72] transition-all text-lg">
-                  View All Products
-                </button>
+              {/* View All Products */}
+              <Link
+                to="/products"
+                className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#224b72] transition-all text-lg inline-block text-center"
+              >
+                View All Products
               </Link>
             </div>
           </Reveal>
