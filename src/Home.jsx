@@ -238,8 +238,8 @@ const Home = () => {
               <div className="flex items-center gap-8 pt-8 border-t-2 border-blue-200">
                 {[
                   { num: "30+", label: "Years Experience" },
-                  { num: "50+", label: "Countries" },
-                  { num: "10K+", label: "Happy Clients" },
+                  // { num: "50+", label: "Countries" },
+                  // { num: "10K+", label: "Happy Clients" },
                 ].map((stat, idx) => (
                   <div key={idx} className="group cursor-pointer">
                     <p className="text-4xl font-black bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">
