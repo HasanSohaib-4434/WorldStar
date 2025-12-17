@@ -468,7 +468,7 @@ const Home = () => {
             <div className="flex justify-center lg:justify-end lg:-mr-20">
               <div className="w-full lg:w-[140%] max-w-none">
                 <DotLottieReact
-                  src="Hero.lottie"
+                  src="Hometwo.lottie"
                   loop
                   autoplay
                   className="w-full h-full drop-shadow-2xl scale-125 lg:scale-150"

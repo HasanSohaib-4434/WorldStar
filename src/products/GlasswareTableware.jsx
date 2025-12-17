@@ -51,7 +51,7 @@ const GlasswareTableware = () => {
     {
       title: "Crystal & Glassware",
       icon: Wine,
-      image: "/universal.jpeg",
+      image: "/Glassware.jpeg",
       desc: "Elegant crystal and glass products for dining and entertaining.",
       details:
         "Our glassware collection includes wine glasses, champagne flutes, whiskey tumblers, cocktail glasses, decanters, and decorative crystal pieces. Manufactured from premium soda-lime glass and lead-free crystal, each piece features clarity, brilliance, and durability. Available in classic and contemporary designs suitable for hotels, restaurants, bars, and home use. We offer plain glass, cut crystal patterns, etched designs, and colored glass options. All glassware is dishwasher safe and meets food contact safety standards.",
@@ -59,7 +59,7 @@ const GlasswareTableware = () => {
     {
       title: "Dinnerware Sets",
       icon: UtensilsCrossed,
-      image: "/universal.jpeg",
+      image: "/Tableware.jpeg",
       desc: "Complete ceramic and porcelain dinnerware collections.",
       details:
         "We supply comprehensive dinnerware sets including dinner plates, salad plates, bowls, cups, saucers, and serving platters. Our collections feature fine bone china, porcelain, stoneware, and melamine options to suit different market segments and price points. Available in various patterns from classic white to decorative designs with gold trim, floral motifs, and contemporary graphics. All dinnerware is microwave safe, dishwasher safe, and chip-resistant. Perfect for hospitality, retail, and institutional catering.",
@@ -67,7 +67,7 @@ const GlasswareTableware = () => {
     {
       title: "Serving & Display",
       icon: Sparkles,
-      image: "/universal.jpeg",
+      image: "/Serving collection.jpeg",
       desc: "Premium serving pieces and decorative tableware items.",
       details:
         "Our serving collection includes cake stands, serving bowls, platters, trays, gravy boats, sugar and creamer sets, salt and pepper shakers, and decorative centerpieces. Each piece combines functionality with aesthetic appeal, perfect for both everyday use and special occasions. Available in glass, ceramic, stainless steel, and combination materials. We offer elegant designs suitable for fine dining establishments, catering services, and home entertaining. Custom designs and corporate branding options available for hospitality clients.",
@@ -75,7 +75,7 @@ const GlasswareTableware = () => {
     {
       title: "Drinkware Collection",
       icon: Coffee,
-      image: "/universal.jpeg",
+      image: "/Drinkware.jpeg",
       desc: "Comprehensive range of drinking glasses and mugs.",
       details:
         "Our drinkware portfolio includes water glasses, juice glasses, beer mugs, coffee mugs, tea cups, and specialty beverage containers. Manufactured from tempered glass, borosilicate glass, and ceramic materials for durability and temperature resistance. Available in various capacities from espresso cups to large beer steins. We offer plain, printed, and decorative options with custom logo printing for corporate and promotional use. All drinkware meets FDA and EU food contact regulations with lead-free and cadmium-free compositions.",

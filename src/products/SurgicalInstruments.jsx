@@ -51,7 +51,7 @@ const SurgicalInstruments = () => {
     {
       title: "Surgical Scissors",
       icon: Scissors,
-      image: "/universal.jpeg",
+      image: "/Surgical scissors.jpeg",
       desc: "Precision surgical scissors for various medical procedures.",
       details:
         "Our surgical scissors range includes Mayo scissors, Metzenbaum scissors, iris scissors, bandage scissors, and specialty cutting instruments. Manufactured from high-grade German and Japanese stainless steel, each scissor features razor-sharp blades, smooth articulation, and ergonomic handles for precise cutting control. Available in straight and curved patterns, various lengths, and both reusable and disposable options. All scissors undergo sharpness testing, autoclave sterilization validation, and quality inspections to ensure optimal performance in surgical environments.",
@@ -59,7 +59,7 @@ const SurgicalInstruments = () => {
     {
       title: "Forceps & Clamps",
       icon: Activity,
-      image: "/universal.jpeg",
+      image: "/Forceps & Clamps.jpeg",
       desc: "High-precision forceps and hemostatic clamps for surgery.",
       details:
         "We manufacture a comprehensive range including tissue forceps, hemostatic forceps, artery forceps, sponge holding forceps, and needle holders. Each instrument is precision-machined from medical-grade stainless steel with proper jaw alignment, controlled grip tension, and durable ratchet mechanisms. Available in various sizes from delicate micro-forceps to robust surgical clamps. Our forceps meet ASTM standards for surgical instruments with smooth surfaces that prevent tissue trauma and facilitate cleaning and sterilization.",
@@ -67,7 +67,7 @@ const SurgicalInstruments = () => {
     {
       title: "Dental Instruments",
       icon: Heart,
-      image: "/universal.jpeg",
+      image: "/Dental instruments.jpeg",
       desc: "Professional dental tools for dentists and oral surgeons.",
       details:
         "Our dental instrument collection includes extraction forceps, elevators, scalers, curettes, mirrors, explorers, probes, and periodontal instruments. Each tool is crafted from anti-corrosive surgical steel with ergonomic handles to reduce hand fatigue during procedures. We offer instruments in both American and German patterns to suit different practice preferences. All dental tools feature precise working ends, balanced weight distribution, and can withstand repeated autoclaving. Perfect for dental clinics, hospitals, and educational institutions.",
@@ -75,7 +75,7 @@ const SurgicalInstruments = () => {
     {
       title: "General Surgery Tools",
       icon: Stethoscope,
-      image: "/universal.jpeg",
+      image: "/Generel surgery.jpeg",
       desc: "Complete range of surgical instruments for operating rooms.",
       details:
         "Our general surgery portfolio includes scalpel handles and blades, retractors, suction tubes, needle drivers, towel clamps, surgical knives, bone instruments, and instrument sets. Each instrument is manufactured to American, German, or Japanese standards with precise dimensions and optimal functionality. We supply single instruments or complete surgical sets tailored to specific procedures like general surgery, orthopedics, gynecology, and neurosurgery. All instruments are tested for material composition, strength, and compliance with ISO 13485 medical device standards.",

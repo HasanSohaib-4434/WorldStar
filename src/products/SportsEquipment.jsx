@@ -51,7 +51,7 @@ const SportsEquipment = () => {
     {
       title: "Footballs",
       icon: Trophy,
-      image: "/universal.jpeg",
+      image: "/Soccerballs.jpeg",
       desc: "Professional and recreational footballs for all levels of play.",
       details:
         "We manufacture FIFA-approved match balls, training footballs, and promotional balls using premium synthetic leather, PU, and PVC materials. Each ball is hand-stitched or thermally bonded with latex or butyl bladders for optimal air retention. Available in sizes 3, 4, and 5 with custom printing options for clubs, tournaments, and promotional events. Our footballs meet international weight and circumference standards, ensuring consistent performance and durability on all playing surfaces.",
@@ -59,7 +59,7 @@ const SportsEquipment = () => {
     {
       title: "Cricket Equipment",
       icon: Target,
-      image: "/universal.jpeg",
+      image: "/Cricket.jpeg",
       desc: "Complete range of cricket gear for professionals and enthusiasts.",
       details:
         "Our cricket equipment includes English willow and Kashmir willow bats, leather balls with cork cores, protective gear including pads, gloves, helmets, and abdominal guards. We also supply stumps, bails, cricket clothing, and training accessories. Each bat undergoes careful seasoning and shaping by skilled craftsmen. All protective equipment meets international safety standards with shock-absorbing materials and reinforced stitching for maximum protection during play.",
@@ -67,7 +67,7 @@ const SportsEquipment = () => {
     {
       title: "General Sports Goods",
       icon: Dumbbell,
-      image: "/universal.jpeg",
+      image: "/General sports goods.jpeg",
       desc: "Wide variety of sporting goods for multiple disciplines.",
       details:
         "We offer a comprehensive range including gym equipment, fitness accessories, boxing gear, badminton rackets and shuttlecocks, tennis equipment, volleyball and basketball gear, track and field equipment, and outdoor sports accessories. Each product category maintains strict quality standards with durable construction, ergonomic design, and compliance with sport-specific regulations. Perfect for sports retailers, gyms, schools, and sporting goods distributors worldwide.",

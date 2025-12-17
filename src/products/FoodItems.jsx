@@ -9,6 +9,7 @@ import {
   Award,
   Package,
   Globe,
+  Leaf,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -52,7 +53,7 @@ const FoodItems = () => {
     {
       title: "Himalayan Pink Salt",
       icon: Mountain,
-      image: "/universal.jpeg",
+      image: "/Pink salt.jpeg",
       desc: "Pure, unprocessed Himalayan pink salt from Pakistan's salt mines.",
       details:
         "Sourced directly from the ancient salt mines of Khewra, our Himalayan pink salt is 100% natural and unrefined. Rich in essential minerals including calcium, magnesium, and potassium, it's available in various grades - edible fine salt, coarse crystals, salt blocks, and decorative lamps. Each batch is tested for purity and meets international food safety standards including FDA and EU regulations.",
@@ -66,17 +67,17 @@ const FoodItems = () => {
         "We export premium Basmati rice varieties including Super Basmati, 1121 Extra Long Grain, and traditional white Basmati. Known for their distinctive aroma, delicate flavor, and non-sticky texture, our rice undergoes careful aging, sorting, and quality testing. Available in 1kg to 50kg packaging with options for private labeling. All batches are pesticide-tested and certified for export quality.",
     },
     {
-      title: "Confectionery",
-      icon: Candy,
-      image: "/universal.jpeg",
-      desc: "Delicious confectionery products for retail and wholesale markets.",
+      title: "Spices",
+      icon: Leaf,
+      image: "/Spices.jpeg",
+      desc: "Premium quality spices sourced for global retail and wholesale markets.",
       details:
-        "Our confectionery range includes hard candies, lollipops, toffees, chocolates, and sugar-free options. Manufactured in HACCP-certified facilities with strict hygiene protocols, each product features quality ingredients, vibrant flavors, and attractive packaging. Perfect for retailers, distributors, and promotional campaigns with customization options available for bulk orders.",
+        "Our spice range includes red chili, turmeric, cumin, coriander, black pepper, and blended masalas. Carefully sourced from trusted farms and processed under strict quality controls to preserve aroma, color, and flavor. Ideal for food manufacturers, restaurants, and exporters, with custom packaging and bulk supply options available.",
     },
     {
       title: "Fruits & Vegetables",
       icon: Carrot,
-      image: "/universal.jpeg",
+      image: "/Vegetables.jpeg",
       desc: "Fresh and processed fruits and vegetables sourced seasonally.",
       details:
         "We supply fresh seasonal fruits including mangoes, citrus, apples, and dried fruits like dates, apricots, and raisins. Our vegetable portfolio includes potatoes, onions, tomatoes, and processed options like frozen vegetables and pulps. All products are carefully selected, graded, and packaged following cold chain management to preserve freshness and nutritional value during transit.",

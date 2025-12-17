@@ -49,7 +49,7 @@ const Textiles = () => {
     {
       title: "Yarn",
       icon: Package,
-      image: "/universal.jpeg",
+      image: "/Yarn.jpeg",
       desc: "Premium quality yarns for diverse textile applications.",
       details:
         "We supply a comprehensive range of yarns including cotton, polyester, viscose, acrylic, and blended varieties. Our yarn collection caters to knitting, weaving, and embroidery industries with various counts, plies, and finishes. Each batch is tested for strength, uniformity, and color consistency to meet international textile standards. Available in different twists, textures, and dye options to suit manufacturing requirements for apparel, home textiles, and industrial applications.",
@@ -57,7 +57,7 @@ const Textiles = () => {
     {
       title: "Fabrics",
       icon: Shirt,
-      image: "/universal.jpeg",
+      image: "/Fabrics.jpeg",
       desc: "Wide variety of woven and knitted fabrics for every need.",
       details:
         "From lightweight voiles to heavy-duty canvas, our fabric portfolio includes cotton, linen, silk, polyester, and technical fabrics. We offer plain, printed, dyed, and embroidered options suitable for apparel, home textiles, and industrial applications. All fabrics undergo shrinkage control, color fastness testing, and quality inspection before dispatch. Available in various weights, widths, and finishes including mercerized, brushed, and coated treatments for enhanced performance and aesthetics.",
@@ -65,7 +65,7 @@ const Textiles = () => {
     {
       title: "Made-ups",
       icon: Scissors,
-      image: "/universal.jpeg",
+      image: "/Made ups.jpeg",
       desc: "Finished textile products ready for retail and wholesale.",
       details:
         "Our made-ups division produces bed linen, towels, curtains, table linen, and home furnishing items. Each product is crafted with precision stitching, quality finishing, and attention to detail. We offer customization in sizes, colors, and packaging to meet specific buyer requirements and retail standards. From luxury hotel collections to everyday home textiles, our made-ups combine functionality with style, manufactured using superior fabrics and construction techniques.",
@@ -73,7 +73,7 @@ const Textiles = () => {
     {
       title: "Garments",
       icon: Ruler,
-      image: "/universal.jpeg",
+      image: "/Garments.jpeg",
       desc: "Ready-made garments for men, women, and children.",
       details:
         "We manufacture and export a complete range of garments including t-shirts, shirts, trousers, dresses, and jackets. Our production facilities follow ethical manufacturing practices with skilled tailors ensuring perfect fits and durable construction. Available in various sizes with options for private labeling and custom designs. From basic casual wear to fashion-forward pieces, our garment division serves retailers, fashion brands, and corporate uniform suppliers with quality that meets international standards.",
@@ -81,7 +81,7 @@ const Textiles = () => {
     {
       title: "Suiting Fabrics",
       icon: Shirt,
-      image: "/universal.jpeg",
+      image: "/Suiting Fabrics.jpeg",
       desc: "Premium suiting and formal wear fabrics.",
       details:
         "Specializing in high-quality suiting fabrics including wool blends, poly-viscose, and premium wool varieties. Our suiting range features various weights, textures, and patterns suitable for corporate wear, formal occasions, and bespoke tailoring. Each fabric is pre-shrunk, wrinkle-resistant, and finished to international standards with excellent drape and recovery properties. Perfect for tailors, garment manufacturers, and corporate uniform suppliers requiring consistent quality and color matching across large orders.",

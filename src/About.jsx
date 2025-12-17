@@ -139,7 +139,11 @@ const About = () => {
           <Reveal delay={200}>
             <div className="relative flex justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-[#224b72] to-blue-600 opacity-20 blur-3xl rounded-full" />
-              <Users className="w-40 h-40 text-[#224b72] relative z-10" />
+              <img
+                src="whoWeAre.png"
+                alt="Global Presence"
+                className="w-[28rem] h-[28rem] relative z-10 object-contain"
+              />
             </div>
           </Reveal>
         </div>

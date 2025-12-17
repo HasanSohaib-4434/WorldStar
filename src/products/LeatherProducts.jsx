@@ -51,7 +51,7 @@ const LeatherProducts = () => {
     {
       title: "Finished Leather",
       icon: Scissors,
-      image: "/universal.jpeg",
+      image: "/Finished leather.jpeg",
       desc: "Premium quality finished leather for manufacturing and crafts.",
       details:
         "We supply a wide range of finished leather including vegetable-tanned, chrome-tanned, and semi-chrome leather varieties. Available in full-grain, top-grain, and genuine leather grades with various finishes including natural, aniline, semi-aniline, and pigmented surfaces. Our leather is sourced from certified tanneries meeting environmental and quality standards. Perfect for furniture manufacturers, automotive upholstery, footwear production, and leather goods makers. Available in different thicknesses, colors, and textures to suit diverse manufacturing requirements.",
@@ -59,7 +59,7 @@ const LeatherProducts = () => {
     {
       title: "Leather Shoes",
       icon: ShoppingBag,
-      image: "/universal.jpeg",
+      image: "/Leather shoes.jpeg",
       desc: "Handcrafted leather footwear for men, women, and children.",
       details:
         "Our footwear collection includes formal shoes, casual loafers, boots, sandals, and traditional leather footwear. Each pair is crafted by skilled artisans using genuine leather uppers, cushioned insoles, and durable outsoles. We offer custom sizing, color options, and private labeling for retailers and distributors. All shoes undergo comfort testing, flexibility checks, and quality inspections. Available in various styles from classic dress shoes to contemporary casual designs, suitable for different markets and seasons.",
@@ -67,7 +67,7 @@ const LeatherProducts = () => {
     {
       title: "Belts & Accessories",
       icon: Briefcase,
-      image: "/universal.jpeg",
+      image: "/Belts & Accessories.jpeg",
       desc: "Stylish leather belts, wallets, and fashion accessories.",
       details:
         "Our accessories range includes leather belts with multiple buckle styles, wallets, cardholders, keychains, and small leather goods. Each product is cut from premium leather hides with precision stitching, edge finishing, and durable hardware. Belts are available in various widths, lengths, and colors with options for embossing and custom branding. Perfect for fashion retailers, corporate gifting, and wholesale distribution. All accessories combine functionality with timeless style and are built to last for years.",
@@ -75,7 +75,7 @@ const LeatherProducts = () => {
     {
       title: "Leather Bags",
       icon: ShoppingBag,
-      image: "/universal.jpeg",
+      image: "/Leather bags.jpeg",
       desc: "Durable and stylish leather bags for every occasion.",
       details:
         "We manufacture a comprehensive range of leather bags including briefcases, laptop bags, backpacks, handbags, crossbody bags, messenger bags, and travel luggage. Each bag features reinforced stitching, quality zippers and hardware, padded compartments, and ergonomic designs. Available in various leather types from soft nappa to rugged full-grain leather. Custom designs, branding, and packaging available for corporate clients and fashion brands. Our bags blend professional aesthetics with practical functionality.",
@@ -83,7 +83,7 @@ const LeatherProducts = () => {
     {
       title: "Leather Garments",
       icon: Shirt,
-      image: "/universal.jpeg",
+      image: "/Leather garments.jpeg",
       desc: "Premium leather jackets, coats, and fashion wear.",
       details:
         "Our garment collection includes leather jackets, coats, vests, pants, and fashion accessories. Crafted from supple lambskin, robust cowhide, and premium sheepskin, each garment is tailored for comfort and style. We offer various styles including biker jackets, bomber jackets, formal coats, and contemporary fashion pieces. All garments feature quality linings, YKK zippers, and professional finishing. Available in standard sizes with options for custom tailoring, color selection, and design modifications for fashion brands and retailers.",
