@@ -259,12 +259,12 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center lg:justify-end lg:-mr-20">
-              <div className="w-full lg:w-[140%] max-w-none">
+              <div className="w-full lg:w-[160%] max-w-none">
                 <DotLottieReact
                   src="Hero.lottie"
                   loop
                   autoplay
-                  className="w-full h-full drop-shadow-2xl scale-125 lg:scale-150"
+                  className="w-full h-full drop-shadow-2xl scale-150 lg:scale-175"
                 />
               </div>
             </div>
