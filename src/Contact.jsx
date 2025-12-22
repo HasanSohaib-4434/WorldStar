@@ -108,13 +108,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+92 300 1234567",
-      link: "tel:+923001234567",
+      detail: "+92 3074440040",
+      link: "tel:+923074440040",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      detail: "Lahore, Punjab, Pakistan",
+      detail: "Gulshan Colony, Faisalabad, Pakistan",
       link: "#",
     },
     {
@@ -232,7 +232,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold text-lg mb-1">Global Reach</h3>
                       <p className="text-gray-600">
-                        Supporting clients in 50+ countries worldwide
+                        Supporting clients worldwide
                       </p>
                     </div>
                   </div>
@@ -377,7 +377,7 @@ const Contact = () => {
               <MapPin className="w-16 h-16 text-[#224b72] mx-auto mb-6" />
               <h3 className="text-2xl font-bold mb-4">Worldstar Enterprise</h3>
               <p className="text-gray-600 text-lg mb-6">
-                Lahore, Punjab, Pakistan
+                Gulshan Colony, Faisalabad, Punjab, Pakistan
               </p>
               <p className="text-gray-500 max-w-2xl mx-auto">
                 Our office is centrally located and easily accessible. Contact
