@@ -50,41 +50,53 @@ const Textiles = () => {
       title: "Yarn",
       icon: Package,
       image: "/Yarn.jpeg",
-      desc: "Premium quality yarns for diverse textile applications.",
+      desc: "High-quality yarns for textile manufacturing.",
       details:
-        "We supply a comprehensive range of yarns including cotton, polyester, viscose, acrylic, and blended varieties. Our yarn collection caters to knitting, weaving, and embroidery industries with various counts, plies, and finishes. Each batch is tested for strength, uniformity, and color consistency to meet international textile standards. Available in different twists, textures, and dye options to suit manufacturing requirements for apparel, home textiles, and industrial applications.",
+        "We offer cotton, polyester, and blended yarns suitable for knitting, weaving, dyeing, and sweater production. Our yarns are produced in modern spinning mills and tested for strength, uniformity, and consistency to meet international quality standards. Available in various counts, plies, and twists to match different fabric and end-use requirements. Custom dyeing and packing options are also provided on request.",
     },
     {
       title: "Fabrics",
       icon: Shirt,
       image: "/Fabrics.jpeg",
-      desc: "Wide variety of woven and knitted fabrics for every need.",
+      desc: "Versatile woven and knitted fabric solutions.",
       details:
-        "From lightweight voiles to heavy-duty canvas, our fabric portfolio includes cotton, linen, silk, polyester, and technical fabrics. We offer plain, printed, dyed, and embroidered options suitable for apparel, home textiles, and industrial applications. All fabrics undergo shrinkage control, color fastness testing, and quality inspection before dispatch. Available in various weights, widths, and finishes including mercerized, brushed, and coated treatments for enhanced performance and aesthetics.",
+        "Our fabric range includes cotton, linen, polyester, and blended fabrics in greige, bleached, dyed, and printed options. Available in multiple weights, widths, and finishes, all fabrics are quality-tested for durability, color fastness, and performance across apparel, home, and hospitality uses. Special finishes such as mercerized, brushed, and coated treatments can be applied. Custom designs and fabric developments are available as per buyer specifications.",
     },
+
     {
-      title: "Made-ups",
+      title: "Home Textiles",
       icon: Scissors,
-      image: "/Made ups.jpeg",
-      desc: "Finished textile products ready for retail and wholesale.",
+      image: "/homeTextiles.jpeg",
+      desc: "Comfortable and stylish textile essentials for modern homes.",
       details:
-        "Our made-ups division produces bed linen, towels, curtains, table linen, and home furnishing items. Each product is crafted with precision stitching, quality finishing, and attention to detail. We offer customization in sizes, colors, and packaging to meet specific buyer requirements and retail standards. From luxury hotel collections to everyday home textiles, our made-ups combine functionality with style, manufactured using superior fabrics and construction techniques.",
+        "Our home textiles range includes bed linen, bath linen, and kitchen linen crafted from 100% cotton, man-made, and blended fabrics. The collection features solid and printed bedsheets with mid to high thread counts, along with towels, bath mats, and kitchen essentials. Customization in sizes, colors, designs, and packaging is available for retail and private label brands.",
     },
+
+    {
+      title: "Hospitality Textiles",
+      icon: Scissors,
+      image: "/HospitalityTextiles.jpeg",
+      desc: "Premium white textiles designed for hotels and institutions.",
+      details:
+        "We specialize in high-quality white bed and bath linen for the hospitality sector. Our range includes bedsheets, pillowcases, towels, and bath mats made from 100% cotton with high thread counts. Designed for durability and frequent industrial washing, our textiles maintain whiteness, softness, and comfort for hotels, resorts, and hospitals.",
+    },
+
     {
       title: "Garments",
       icon: Ruler,
       image: "/Garments.jpeg",
       desc: "Ready-made garments for men, women, and children.",
       details:
-        "We manufacture and export a complete range of garments including t-shirts, shirts, trousers, dresses, and jackets. Our production facilities follow ethical manufacturing practices with skilled tailors ensuring perfect fits and durable construction. Available in various sizes with options for private labeling and custom designs. From basic casual wear to fashion-forward pieces, our garment division serves retailers, fashion brands, and corporate uniform suppliers with quality that meets international standards.",
+        "We source and export a complete range of garments including t-shirts, shirts, trousers, dresses, and jackets. Our production facilities follow ethical manufacturing practices with skilled tailors ensuring perfect fits. Available in various sizes with options for private labeling and custom designs. From casual wear to fashion-forward pieces, our garment division serves retailers, fashion brands, and corporate uniform suppliers with quality meeting international standards.",
     },
+
     {
-      title: "Suiting Fabrics",
+      title: "Traditional Suiting and Fabric",
       icon: Shirt,
-      image: "/Suiting Fabrics.jpeg",
+      image: "/SuitingFabrics2.jpeg",
       desc: "Premium suiting and formal wear fabrics.",
       details:
-        "Specializing in high-quality suiting fabrics including wool blends, poly-viscose, and premium wool varieties. Our suiting range features various weights, textures, and patterns suitable for corporate wear, formal occasions, and bespoke tailoring. Each fabric is pre-shrunk, wrinkle-resistant, and finished to international standards with excellent drape and recovery properties. Perfect for tailors, garment manufacturers, and corporate uniform suppliers requiring consistent quality and color matching across large orders.",
+        "We specialize in fabrics for traditional wear, including Pakistani three-piece ladies’ suiting with printed and embroidered designs. Our range also includes fabrics for abayas, jalabiyas, and shawls. For gents, we offer shalwar kameez fabrics in 100% cotton and wash-and-wear materials. Handmade wool shawls are also available for both ladies and gents, crafted with quality and care.",
     },
   ];
 
@@ -130,7 +142,7 @@ const Textiles = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/Textiles.jpeg"
+            src="/Textile2.jpeg"
             alt="Textiles"
             className="w-full h-full object-cover"
           />
@@ -172,8 +184,8 @@ const Textiles = () => {
                 yarns, fabrics, made-ups, garments, and suiting materials to
                 businesses across the globe. Our commitment to quality, ethical
                 manufacturing, and customer satisfaction has made us a preferred
-                partner for major fashion brands, retailers, and textile
-                distributors.
+                partner for major fashion brands, retailers, hotel industries
+                and textile distributors.
               </p>
             </div>
           </Reveal>
@@ -274,12 +286,11 @@ const Textiles = () => {
                   Manufacturing Excellence
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Our manufacturing partners operate ISO 9001 certified
-                  facilities with modern machinery and skilled workforce. Every
-                  production batch undergoes rigorous quality checks including
-                  fabric weight testing, color fastness analysis, tensile
-                  strength measurements, and dimensional stability assessments
-                  to ensure consistency and durability.
+                  Our manufacturing partners operate with modern machinery and
+                  skilled workforce. Every production batch undergoes rigorous
+                  quality checks including fabric weight testing, color fastness
+                  analysis, tensile strength measurements, and dimensional
+                  stability assessments to ensure consistency and durability.
                 </p>
               </div>
             </Reveal>

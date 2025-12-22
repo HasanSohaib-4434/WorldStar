@@ -10,6 +10,8 @@ import {
   Package,
   Globe,
   Leaf,
+  CupSoda,
+  Egg,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -80,7 +82,31 @@ const FoodItems = () => {
       image: "/Vegetables.jpeg",
       desc: "Fresh and processed fruits and vegetables sourced seasonally.",
       details:
-        "We supply fresh seasonal fruits including mangoes, citrus, apples, and dried fruits like dates, apricots, and raisins. Our vegetable portfolio includes potatoes, onions, tomatoes, and processed options like frozen vegetables and pulps. All products are carefully selected, graded, and packaged following cold chain management to preserve freshness and nutritional value during transit.",
+        "We supply fresh seasonal fruits including mangoes, citrus, guava and their dehydrated variants additional with banana, apricot and peach. Our vegetable portfolio includes potatoes, onions, tomatoes, and processed options like frozen vegetables and pulps. All products are carefully selected, graded and packaged to meet standards of food safety.",
+    },
+    {
+      title: "Confectionery",
+      icon: Candy,
+      image: "/chijimiji.jpeg",
+      desc: "Delicious confectionery products for retail and wholesale markets.",
+      details:
+        "Our confectionery range includes hard candies, lollipops, toffees, chocolates, and sugar-free options. Manufactured in HACCP-certified facilities with strict hygiene protocols, each product features quality ingredients, vibrant flavors, and attractive packaging. Perfect for retailers, distributors, and promotional campaigns with customization options available for bulk orders. Each batch undergoes strict quality checks to ensure freshness and consistency.",
+    },
+    {
+      title: "Juices",
+      icon: CupSoda, // replace with a valid lucide icon if Juice doesn't exist
+      image: "/juice.jpeg", // create this image in your public folder
+      desc: "Refreshing fruit and vegetable juices, natural and preservative-free.",
+      details:
+        "Our juice range includes cold-pressed and freshly extracted fruit and vegetable juices. Available in single flavors or mixed blends, these beverages are rich in nutrients and vitamins. Ideal for retailers, cafés, and restaurants seeking premium natural drinks. Each batch undergoes strict quality control for taste, freshness, and packaging standards.",
+    },
+    {
+      title: "Eggs",
+      icon: Egg, // replace with a valid lucide icon if Egg doesn't exist
+      image: "/Eggs.jpeg", // create this image in your public folder
+      desc: "Farm-fresh eggs, graded and packaged for retail and wholesale.",
+      details:
+        "We supply high-quality eggs sourced from trusted poultry farms. Available in different sizes and grades, our eggs meet international standards for freshness and hygiene. Ideal for retailers, food manufacturers, and export markets. Each batch is tested for quality and carefully packaged to maintain freshness during transit.",
     },
   ];
 
@@ -166,10 +192,11 @@ const FoodItems = () => {
                 Worldstar Enterprise specializes in exporting high-quality food
                 products that meet international safety and hygiene standards.
                 From Himalayan pink salt to premium Basmati rice, confectionery,
-                and fresh produce, we ensure every product reaches our clients
-                in perfect condition. Our partnerships with certified growers
-                and manufacturers, combined with temperature-controlled
-                logistics, guarantee freshness and quality at every step.
+                spices, juices, eggs dehydrated fruits and fresh produce, we
+                ensure every product reaches our clients in perfect condition.
+                Our partnerships with certified growers and manufacturers,
+                combined with temperature-controlled logistics, guarantee
+                freshness and quality at every step.
               </p>
             </div>
           </Reveal>
@@ -273,8 +300,8 @@ const FoodItems = () => {
                   source to shipment. Our testing includes pesticide residue
                   analysis, microbial testing, moisture content measurement, and
                   sensory evaluation. We partner only with certified suppliers
-                  who maintain HACCP, ISO 22000, and GMP standards, ensuring
-                  products meet FDA, EU, and importing country regulations.
+                  who maintain standards, ensuring products meet your required
+                  certifications.
                 </p>
               </div>
             </Reveal>

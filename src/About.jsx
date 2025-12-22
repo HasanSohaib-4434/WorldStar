@@ -48,10 +48,18 @@ const About = () => {
 
   /* ---------------- Data ---------------- */
   const team = [
-    { name: "John Smith", role: "CEO & Founder", emoji: "👨‍💼" },
-    { name: "Sarah Johnson", role: "Operations Director", emoji: "👩‍💼" },
-    { name: "Michael Chen", role: "Product Manager", emoji: "👨‍🔧" },
-    { name: "Emily Davis", role: "Design Lead", emoji: "👩‍🎨" },
+    { name: "Azhar Iqbal", role: "CEO", emoji: "👨‍💼" },
+    {
+      name: "M. Mushtaq Sheikh",
+      role: "Operations Director",
+      emoji: "👨‍💻",
+    },
+    { name: "Abdul Malik", role: "Sourcing & Marketing Director", emoji: "👨🏻‍💼" },
+    {
+      name: "Ahmad Naveed",
+      role: "Production & Development Director",
+      emoji: "🕴️",
+    },
   ];
 
   const services = [
@@ -61,13 +69,13 @@ const About = () => {
       icon: Package,
     },
     {
-      title: "Supply Chain & Warehousing",
-      desc: "Efficient logistics, inventory handling, and scalable storage.",
+      title: "Strategic Negotiation",
+      desc: "Best prices on top-quality products through aggressive supplier negotiation.",
       icon: Truck,
     },
     {
-      title: "Design & Branding",
-      desc: "In-house designers crafting market-ready, on-brand products.",
+      title: "Brand Supply & Growth",
+      desc: "We help build and scale brands through consistent, high-grade supply.",
       icon: Palette,
     },
     {
@@ -166,9 +174,8 @@ const About = () => {
                 A Global Presence with Vast Industry Experience
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                Based in Faisalabad, the textile manufacturing hub of Pakistan,
-                with sales operations in the United Kingdom, Australia, and New
-                Zealand.
+                With manufacturers and suppliers across countries, and sales
+                operations across Europe, Asia, North America, and Africa
               </p>
               <p className="text-lg text-gray-600">
                 Worldstar Enterprises leverages its global supply chain and
@@ -188,9 +195,8 @@ const About = () => {
                 30+ Years of Global Trade Excellence
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                Founded over three decades ago, Worldstar Enterprises has grown
-                from a regional trading firm into a trusted international
-                sourcing and logistics partner.
+                Worldstar Enterprises has grown from a regional trading firm
+                into a trusted international sourcing and logistics partner.
               </p>
               <p className="text-lg text-gray-600">
                 Our experience across manufacturing, quality control, and global

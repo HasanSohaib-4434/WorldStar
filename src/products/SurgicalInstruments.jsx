@@ -49,22 +49,6 @@ const SurgicalInstruments = () => {
 
   const products = [
     {
-      title: "Surgical Scissors",
-      icon: Scissors,
-      image: "/Surgical scissors.jpeg",
-      desc: "Precision surgical scissors for various medical procedures.",
-      details:
-        "Our surgical scissors range includes Mayo scissors, Metzenbaum scissors, iris scissors, bandage scissors, and specialty cutting instruments. Manufactured from high-grade German and Japanese stainless steel, each scissor features razor-sharp blades, smooth articulation, and ergonomic handles for precise cutting control. Available in straight and curved patterns, various lengths, and both reusable and disposable options. All scissors undergo sharpness testing, autoclave sterilization validation, and quality inspections to ensure optimal performance in surgical environments.",
-    },
-    {
-      title: "Forceps & Clamps",
-      icon: Activity,
-      image: "/Forceps & Clamps.jpeg",
-      desc: "High-precision forceps and hemostatic clamps for surgery.",
-      details:
-        "We manufacture a comprehensive range including tissue forceps, hemostatic forceps, artery forceps, sponge holding forceps, and needle holders. Each instrument is precision-machined from medical-grade stainless steel with proper jaw alignment, controlled grip tension, and durable ratchet mechanisms. Available in various sizes from delicate micro-forceps to robust surgical clamps. Our forceps meet ASTM standards for surgical instruments with smooth surfaces that prevent tissue trauma and facilitate cleaning and sterilization.",
-    },
-    {
       title: "Dental Instruments",
       icon: Heart,
       image: "/Dental instruments.jpeg",

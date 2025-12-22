@@ -8,6 +8,9 @@ import {
   Award,
   Package,
   Globe,
+  Scissors,
+
+  // Tshirt,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -63,6 +66,23 @@ const SportsEquipment = () => {
       desc: "Complete range of cricket gear for professionals and enthusiasts.",
       details:
         "Our cricket equipment includes English willow and Kashmir willow bats, leather balls with cork cores, protective gear including pads, gloves, helmets, and abdominal guards. We also supply stumps, bails, cricket clothing, and training accessories. Each bat undergoes careful seasoning and shaping by skilled craftsmen. All protective equipment meets international safety standards with shock-absorbing materials and reinforced stitching for maximum protection during play.",
+    },
+
+    {
+      title: "Damascus Hunter Knives",
+      icon: Scissors, // keep same as example
+      image: "/HunterKnifes.jpeg", // same placeholder image
+      desc: "High-quality Damascus hunter knives for outdoor enthusiasts and professionals.",
+      details:
+        "Our Damascus hunter knives are precision-forged with layered steel, offering superior sharpness, durability, balance, and customization. Ideal for hunting, camping, and outdoor activities. Each knife undergoes strict quality control to ensure safety, performance, and longevity. Perfect for retailers, outdoor adventure stores, and professional hunters.",
+    },
+    {
+      title: "Track Suits and Protective Gear",
+      icon: Shield, // keep same as example
+      image: "/TrackSuites.jpeg", // same placeholder image
+      desc: "Durable and comfortable track suits along with protective gear for athletes.",
+      details:
+        "We supply premium track suits and protective gear suitable for training, competitions, and sports academies. Products include breathable tracksuits, safety pads, helmets, gloves, and other protective accessories. All items meet international safety standards and are designed for comfort, durability, and optimal performance.",
     },
     {
       title: "General Sports Goods",
@@ -154,7 +174,7 @@ const SportsEquipment = () => {
               <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
                 Worldstar Enterprise has built a strong reputation in the sports
                 equipment industry by delivering products that combine
-                durability, performance, and safety. Our manufacturing
+                durability, performance, and safety. The manufacturing
                 facilities employ skilled craftsmen and modern production
                 techniques to create sporting goods that meet the demanding
                 standards of professional athletes, sports clubs, schools, and

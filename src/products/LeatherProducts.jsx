@@ -86,7 +86,7 @@ const LeatherProducts = () => {
       image: "/Leather garments.jpeg",
       desc: "Premium leather jackets, coats, and fashion wear.",
       details:
-        "Our garment collection includes leather jackets, coats, vests, pants, and fashion accessories. Crafted from supple lambskin, robust cowhide, and premium sheepskin, each garment is tailored for comfort and style. We offer various styles including biker jackets, bomber jackets, formal coats, and contemporary fashion pieces. All garments feature quality linings, YKK zippers, and professional finishing. Available in standard sizes with options for custom tailoring, color selection, and design modifications for fashion brands and retailers.",
+        "Our garment collection includes leather jackets, coats, vests, pants, biker gear and fashion accessories. Crafted from supple lambskin, robust cowhide, and premium sheepskin, each garment is tailored for comfort and style. We offer various styles including biker jackets, bomber jackets, formal coats, and contemporary fashion pieces. All garments feature quality linings, high quality zippers, and professional finishing. Available in standard sizes with options for custom tailoring, color selection, and design modifications for fashion brands and retailers.",
     },
   ];
 
@@ -169,15 +169,13 @@ const LeatherProducts = () => {
                 Craftsmanship Meets Quality
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                Worldstar Enterprise has earned its reputation in the leather
-                industry through decades of dedication to quality and
-                craftsmanship. Our leather products are manufactured by skilled
-                artisans using time-tested techniques combined with modern
-                quality standards. From sourcing premium hides to final
-                finishing, every step is carefully monitored to ensure products
-                that are durable, stylish, and ethically produced. We serve
-                fashion brands, retailers, corporate clients, and leather goods
-                distributors worldwide.
+                Our leather products are manufactured by skilled artisans using
+                time-tested techniques combined with modern quality standards.
+                From sourcing premium hides to final finishing, every step is
+                carefully monitored to ensure products that are durable,
+                stylish, and ethically produced. We serve fashion brands,
+                retailers, corporate clients, and leather goods distributors
+                worldwide.
               </p>
             </div>
           </Reveal>

@@ -163,7 +163,7 @@ const Home = () => {
     {
       icon: <Clock className="w-10 h-10" />,
       title: "On-Time Delivery",
-      description: "99% on-time delivery rate across all shipments",
+      description: "On-time delivery rate across all shipments",
     },
     {
       icon: <Zap className="w-10 h-10" />,
@@ -547,7 +547,7 @@ const Home = () => {
               </span>
             </h2>
             <p className="text-xl md:text-2xl text-blue-100 mb-4 font-bold">
-              Join thousands of satisfied clients worldwide
+              Join countless of satisfied clients worldwide
             </p>
             <p className="text-lg text-blue-200 mb-12 max-w-2xl mx-auto">
               Partner with Worldstar Enterprise and experience seamless

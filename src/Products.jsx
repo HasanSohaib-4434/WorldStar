@@ -46,10 +46,10 @@ const categories = [
     title: "Textiles",
     icon: Shirt,
     link: "/products/textiles",
-    desc: "High-quality fabrics, yarns, and finished textiles for fashion, home, and industrial use.",
+    desc: "Yarns, Fabrics, and finished textiles for fashion, home, and industrial use.",
     details:
-      "From premium cotton and silk to technical fabrics, our textile range serves global fashion brands, interior designers, and industrial manufacturers with consistent quality and ethical sourcing.",
-    image: "/Textiles.jpeg",
+      "From premium cotton, manmade fiber to technical fabrics, our textile range serves global fashion brands, interior designers, and industrial manufacturers with consistent quality and ethical sourcing.",
+    image: "/Textile2.jpeg",
   },
   {
     title: "Food Items",
@@ -155,9 +155,9 @@ const Products = () => {
                 on the quality and reliability of your products. That's why
                 we've built our reputation on sourcing, manufacturing, and
                 delivering products that meet the highest international
-                standards. With over 30 years of experience in global trade, we
-                serve businesses across continents with a commitment to
-                excellence, transparency, and sustainable practices.
+                standards. With decades of experience in global trade, we serve
+                businesses across continents with a commitment to excellence,
+                transparency, and sustainable practices.
               </p>
             </div>
           </Reveal>
@@ -167,12 +167,12 @@ const Products = () => {
               {
                 icon: Globe,
                 title: "Global Reach",
-                desc: "Serving 50+ countries worldwide",
+                desc: "Serving globally",
               },
               {
                 icon: Award,
                 title: "Certified Quality",
-                desc: "ISO & international standards",
+                desc: "Built to meet your requirements",
               },
               {
                 icon: TrendingUp,
