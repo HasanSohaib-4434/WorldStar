@@ -273,7 +273,7 @@ const Home = () => {
       </section>
 
       {/* Animated Stats Bar */}
-      <section className="py-16 px-6 bg-gradient-to-r from-[#224b72] via-blue-600 to-[#224b72] relative overflow-hidden">
+      {/* <section className="py-16 px-6 bg-gradient-to-r from-[#224b72] via-blue-600 to-[#224b72] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-10 animate-shimmer" />
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -316,7 +316,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="py-24 px-6 bg-gradient-to-br from-white via-blue-50 to-white relative">

@@ -69,12 +69,12 @@ const SportsEquipment = () => {
     },
 
     {
-      title: "Damascus Hunter Knives",
+      title: "Hunter Knives",
       icon: Scissors, // keep same as example
       image: "/HunterKnifes.jpeg", // same placeholder image
-      desc: "High-quality Damascus hunter knives for outdoor enthusiasts and professionals.",
+      desc: "High-quality hunter knives for outdoor enthusiasts and professionals.",
       details:
-        "Our Damascus hunter knives are precision-forged with layered steel, offering superior sharpness, durability, balance, and customization. Ideal for hunting, camping, and outdoor activities. Each knife undergoes strict quality control to ensure safety, performance, and longevity. Perfect for retailers, outdoor adventure stores, and professional hunters.",
+        "Our hunter knives include Damascus steel and stainless steel options suitable for hunting, camping, and general outdoor use. Designed for sharpness, durability, balance, and dependable performance, these knives cover both premium and practical requirements. Each knife undergoes strict quality control to ensure safety, consistency, and long service life. Suitable for retailers, outdoor adventure stores, and professional users.",
     },
     {
       title: "Track Suits and Protective Gear",
