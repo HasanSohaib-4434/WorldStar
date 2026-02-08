@@ -2,10 +2,7 @@ const nodemailer = require("nodemailer");
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({ msg: "Method Not Allowed" }),
-    };
+    return { statusCode: 405, body: "Method Not Allowed" };
   }
 
   const { name, email, company, phone, message } = JSON.parse(event.body);
@@ -18,16 +15,15 @@ exports.handler = async (event) => {
   }
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "smtp.titan.email",
     port: 587,
     secure: false,
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: process.env.EMAIL_USER, // info@worldstar.global
+      pass: process.env.EMAIL_PASS, // Titan email password
     },
   });
 
-  // Email to the client
   const clientMailOptions = {
     from: `"Worldstar" <${process.env.EMAIL_USER}>`,
     to: email,
@@ -38,12 +34,10 @@ exports.handler = async (event) => {
       <p><strong>Company:</strong> ${company || "N/A"}</p>
       <p><strong>Phone:</strong> ${phone || "N/A"}</p>
       <p><strong>Your Message:</strong> ${message}</p>
-      <p>We’ll get back to you shortly.</p>
       <p>— Worldstar Team</p>
     `,
   };
 
-  // Email to the admin
   const adminMailOptions = {
     from: `"Worldstar" <${process.env.EMAIL_USER}>`,
     to: "hassankalyar744@gmail.com",
