@@ -19,7 +19,7 @@ exports.handler = async (event) => {
     port: 587,
     secure: false,
     auth: {
-      user: process.env.EMAIL_USER,
+      user: process.env.EMAIL_USER, 
       pass: process.env.EMAIL_PASS, 
     },
   });
@@ -40,7 +40,7 @@ exports.handler = async (event) => {
 
   const adminMailOptions = {
     from: `"Worldstar" <${process.env.EMAIL_USER}>`,
-    to: "hassankalyar744@gmail.com",
+    to: process.env.EMAIL_USER,
     subject: "New Contact Form Submission",
     html: `
       <h2>New Contact Form Submission</h2>
@@ -67,4 +67,3 @@ exports.handler = async (event) => {
     };
   }
 };
-
