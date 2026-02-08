@@ -19,8 +19,8 @@ exports.handler = async (event) => {
     port: 587,
     secure: false,
     auth: {
-      user: process.env.EMAIL_USER, // info@worldstar.global
-      pass: process.env.EMAIL_PASS, // Titan email password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS, 
     },
   });
 
@@ -67,3 +67,4 @@ exports.handler = async (event) => {
     };
   }
 };
+
