@@ -17,7 +17,7 @@ const Reveal = ({ children, delay = 0 }) => {
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setVisible(true),
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
@@ -102,8 +102,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      detail: "info@worldstarenterprise.com",
-      link: "mailto:info@worldstarenterprise.com",
+      detail: "info@worldstar.global",
+      link: "mailto:info@worldstar.global",
     },
     {
       icon: Phone,
