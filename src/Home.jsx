@@ -11,9 +11,16 @@ import {
   Award,
   Users,
   Clock,
+  Shirt,
+  Apple,
+  Dumbbell,
+  Briefcase,
+  Stethoscope,
+  Wine,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Animated Text Component
 const AnimatedText = () => {
   const phrases = [
     "We Source",
@@ -51,6 +58,7 @@ const AnimatedText = () => {
   );
 };
 
+// Floating Card Component (used in most sections)
 const FloatingCard = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
@@ -62,17 +70,12 @@ const FloatingCard = ({ children, delay = 0 }) => {
           setTimeout(() => setIsVisible(true), delay);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
+    if (ref.current) observer.observe(ref.current);
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      if (ref.current) observer.unobserve(ref.current);
     };
   }, [delay]);
 
@@ -87,6 +90,91 @@ const FloatingCard = ({ children, delay = 0 }) => {
     </div>
   );
 };
+
+// Reveal Animation (used in categories section)
+const Reveal = ({ children, delay = 0 }) => {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([entry]) => entry.isIntersecting && setVisible(true),
+      { threshold: 0.15 },
+    );
+    if (ref.current) obs.observe(ref.current);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
+      className={`transition-all duration-1000 ease-out ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
+// Categories Data
+const categories = [
+  {
+    title: "Textiles",
+    icon: Shirt,
+    link: "/products/textiles",
+    desc: "Yarns, Fabrics, and finished textiles for fashion, home, and industrial use.",
+    details:
+      "From premium cotton, manmade fiber to technical fabrics, our textile range serves global fashion brands, interior designers, and industrial manufacturers with consistent quality and ethical sourcing.",
+    image: "/Textile2.jpeg",
+  },
+  {
+    title: "Food Items",
+    icon: Apple,
+    link: "/products/food-items",
+    desc: "Fresh, preserved, and packaged food products, sourced globally with strict quality control.",
+    details:
+      "We supply rice, spices, dried fruits, sauces, and specialty ingredients to retailers and distributors worldwide. Every product meets international food safety standards and hygiene certifications.",
+    image: "/Foods.jpeg",
+  },
+  {
+    title: "Sports Equipment",
+    icon: Dumbbell,
+    link: "/products/sports-equipment",
+    desc: "Top-grade sports gear for professional and recreational activities, ensuring safety and performance.",
+    details:
+      "Our catalog includes football, cricket equipment, gym accessories, fitness gear, and outdoor sports products. Built for durability and performance, trusted by athletes and sporting goods retailers globally.",
+    image: "/Sports.jpeg",
+  },
+  {
+    title: "Leather Products",
+    icon: Briefcase,
+    link: "/products/leather-products",
+    desc: "Premium leather goods including bags, belts, and accessories crafted with precision.",
+    details:
+      "We offer genuine leather and synthetic alternatives for bags, wallets, belts, jackets, and corporate accessories. Each piece undergoes rigorous quality checks to ensure lasting craftsmanship and style.",
+    image: "/Leather.jpeg",
+  },
+  {
+    title: "Surgical Instruments",
+    icon: Stethoscope,
+    link: "/products/surgical-instruments",
+    desc: "Reliable surgical tools and medical instruments for healthcare providers worldwide.",
+    details:
+      "Manufacturing precision surgical instruments including forceps, scissors, scalpels, and diagnostic tools. CE certified and compliant with ISO medical standards, serving hospitals and medical distributors across continents.",
+    image: "/Surgical.jpeg",
+  },
+  {
+    title: "Glassware & Tableware",
+    icon: Wine,
+    link: "/products/glassware-tableware",
+    desc: "Elegant glass and tableware products for home, hospitality, and retail sectors.",
+    details:
+      "From crystal glassware to ceramic dinnerware, our collection combines elegance with functionality. Perfect for hotels, restaurants, retailers, and home consumers seeking quality and design.",
+    image: "/Glassware & Tableware.jpeg",
+  },
+];
 
 const Home = () => {
   const [activeService, setActiveService] = useState(0);
@@ -204,7 +292,8 @@ const Home = () => {
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `radial-gradient(circle at 50% 50%, #224b72 1px, transparent 1px)`,
+            backgroundImage:
+              "radial-gradient(circle at 50% 50%, #224b72 1px, transparent 1px)",
             backgroundSize: "50px 50px",
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
@@ -241,20 +330,18 @@ const Home = () => {
               </div>
 
               <div className="flex items-center gap-8 pt-8 border-t-2 border-blue-200">
-                {[
-                  { num: "30+", label: "Years Experience" },
-                  // { num: "50+", label: "Countries" },
-                  // { num: "10K+", label: "Happy Clients" },
-                ].map((stat, idx) => (
-                  <div key={idx} className="group cursor-pointer">
-                    <p className="text-4xl font-black bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">
-                      {stat.num}
-                    </p>
-                    <p className="text-sm text-gray-600 font-semibold">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
+                {[{ num: "30+", label: "Years Experience" }].map(
+                  (stat, idx) => (
+                    <div key={idx} className="group cursor-pointer">
+                      <p className="text-4xl font-black bg-gradient-to-r from-[#224b72] to-blue-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">
+                        {stat.num}
+                      </p>
+                      <p className="text-sm text-gray-600 font-semibold">
+                        {stat.label}
+                      </p>
+                    </div>
+                  ),
+                )}
               </div>
             </div>
 
@@ -272,53 +359,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Animated Stats Bar */}
-      {/* <section className="py-16 px-6 bg-gradient-to-r from-[#224b72] via-blue-600 to-[#224b72] relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-10 animate-shimmer" />
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              {
-                num: "99%",
-                label: "Client Satisfaction",
-                icon: <Award className="w-8 h-8" />,
-              },
-              {
-                num: "24/7",
-                label: "Support Available",
-                icon: <Clock className="w-8 h-8" />,
-              },
-              {
-                num: "ISO",
-                label: "Certified Quality",
-                icon: <Shield className="w-8 h-8" />,
-              },
-              {
-                num: "Fast",
-                label: "Global Shipping",
-                icon: <Zap className="w-8 h-8" />,
-              },
-            ].map((stat, idx) => (
-              <div
-                key={idx}
-                className="group space-y-3 transform hover:scale-110 transition-all duration-300"
-              >
-                <div className="flex justify-center text-white opacity-80 group-hover:opacity-100 transition-opacity">
-                  {stat.icon}
-                </div>
-                <p className="text-5xl font-black text-white group-hover:scale-110 transition-transform">
-                  {stat.num}
-                </p>
-                <p className="text-white text-sm font-bold opacity-90">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Services Section */}
+      {/* Comprehensive Trade Solutions */}
       <section className="py-24 px-6 bg-gradient-to-br from-white via-blue-50 to-white relative">
         <div className="max-w-7xl mx-auto">
           <FloatingCard>
@@ -386,7 +427,70 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Cards */}
+      {/* Browse Our Categories - Placed right after services */}
+      <section className="py-20 px-6 z-10 relative bg-gradient-to-br from-blue-50 via-white to-blue-50">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-black text-gray-900 mb-4">
+                Browse Our Categories
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Each product category is carefully curated to meet diverse
+                market demands. Whether you're a retailer, distributor,
+                manufacturer, or institution, we provide customized solutions
+                tailored to your needs.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {categories.map((cat, i) => {
+              const Icon = cat.icon;
+              return (
+                <Reveal key={i} delay={i * 120}>
+                  <div className="group relative bg-white border-2 border-blue-100 rounded-3xl overflow-hidden hover:border-[#224b72] hover:shadow-2xl transition-all hover:-translate-y-2">
+                    {/* Image */}
+                    <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                      <img
+                        src={cat.image}
+                        alt={cat.title}
+                        className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                      <Icon className="absolute bottom-4 right-4 w-12 h-12 text-white drop-shadow-lg" />
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-8">
+                      <h3 className="text-2xl font-bold mb-3 text-gray-900">
+                        {cat.title}
+                      </h3>
+                      <p className="text-gray-600 mb-3 text-sm leading-relaxed">
+                        {cat.desc}
+                      </p>
+                      <p className="text-gray-500 text-xs mb-5 leading-relaxed">
+                        {cat.details}
+                      </p>
+                      <Link
+                        to={cat.link}
+                        className="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-[#224b72] to-blue-600 text-white font-semibold hover:opacity-90 transition text-sm"
+                      >
+                        Explore {cat.title}
+                      </Link>
+                    </div>
+
+                    {/* Decoration */}
+                    <div className="absolute -top-10 -right-10 w-24 h-24 bg-gradient-to-r from-[#224b72] to-blue-400 opacity-10 rounded-full blur-2xl" />
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <FloatingCard>
@@ -533,7 +637,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Call to Action */}
       <section className="relative py-28 px-6 bg-gradient-to-br from-[#224b72] via-blue-700 to-[#224b72] overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzR2Mi1oMnYtMmgtMnptMC00djJoMnYtMmgtMnptMCAxMHYyaDJ2LTJoLTJ6bTAtNnYyaDJ2LTJoLTJ6bS0yIDJ2Mmgydi0yaC0yem0tMiAwdjJoMnYtMmgtMnptLTIgMHYyaDJ2LTJoLTJ6bS0yIDB2Mmgydi0yaC0yem04LTR2Mmgydi0yaC0yem0tOCAwdjJoMnYtMmgtMnptNCAwdjJoMnYtMmgtMnptNCAwdjJoMnYtMmgtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white to-transparent opacity-5 animate-pulse" />
@@ -564,6 +668,7 @@ const Home = () => {
         </FloatingCard>
       </section>
 
+      {/* Animations */}
       <style jsx>{`
         @keyframes float {
           0%,
