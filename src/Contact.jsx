@@ -102,8 +102,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      detail: "info@worldstar.global",
-      link: "mailto:info@worldstar.global",
+      detail: "info@worldstarenterprise.com",
+      link: "mailto:info@worldstarenterprise.com",
     },
     {
       icon: Phone,
