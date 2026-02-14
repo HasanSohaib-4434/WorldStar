@@ -102,8 +102,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      detail: process.env.EMAIL_USER,
-      link: `mailto:${process.env.EMAIL_USER}`,
+      detail: "Info@worldstar.global",
+      link: "mailto:Info@worldstar.global",
     },
     {
       icon: Phone,
